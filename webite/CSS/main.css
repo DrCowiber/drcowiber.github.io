@@ -1,20 +1,9 @@
 header {
-  display: block;
   text-align: center;
   background-color: #5e5c63;
   border-bottom-style: solid;
-  border-bottom-width: 0.5%;
-  width: 100%;
-  position: absolute;
-  margin: 0px auto;
-  left: 0;
-  top: 0;
+  border-bottom-width: 0.5%
 }
-
-header img {
-  padding-top: 0.1%;
-}
-
 .topnav {
   overflow: hidden;
   background-color: #5e5c63;
@@ -37,8 +26,6 @@ header img {
 }
 
 body {
-  display: block;
-  top: -10%;
   text-align: left;
   font-size: 100%
 }
@@ -76,12 +63,4 @@ body {
 .ending {
   font-size: 70%;
   text-align: center;
-}
-footer {
-  text-align: center;
-  background-color: #5e5c63;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
 }
