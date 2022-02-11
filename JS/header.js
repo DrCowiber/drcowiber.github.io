@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
 
       header.innerHTML =
       '<div class="heading">'+
-        '<img src="images/ukraine.png" alt="haha image dont work bozo"/>'+
+        '<img src="images/ukraine.png" alt="image is unable to load"/>'+
         '<h1> Ukraine Hub </h1>'+
         '<div class="topnav">'+
           '<a id=class="active" href="https://drcowiber.github.io">Home</a>'+
@@ -13,5 +13,6 @@ window.addEventListener("load", function() {
           '<a href="https://drcowiber.github.io/chernobyl.html">Chernobyl</a>'+
           '<a href="https://drcowiber.github.io/moldova.html">Moldova</a>'+
         '</div>'+
-      '</div>'
+      '</div>';
+      console.log("header loaded");
 });

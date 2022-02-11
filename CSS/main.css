@@ -3,14 +3,13 @@
   left: 0;
   top: 0;
   width: 100%;
+
 }
 
 .heading {
-  display: block;
   text-align: center;
   background-color: #5e5c63;
   border-bottom-style: solid;
-  border-bottom-width: 0.5%;
   width: 100%;
   margin: 0px auto;
 
@@ -23,7 +22,6 @@
 .topnav {
   overflow: hidden;
   background-color: #5e5c63;
-
 }
 .topnav a {
   float: left;
@@ -82,11 +80,18 @@
   font-size: 70%;
   text-align: center;
 }
-footer {
-  text-align: center;
-  background-color: #5e5c63;
+.bottom {
+  position: absolute;
   width: 100%;
-  position: fixed;
   left: 0;
   bottom: 0;
+}
+
+#footerHere {
+  background-color: #5e5c63;
+}
+.footing {
+  text-align: center;
+  margin: 0px auto;
+
 }
