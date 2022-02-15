@@ -40,6 +40,7 @@
   color: black;
 }
 
+#pageContent
 
 #border {
   text-align: center;
@@ -58,6 +59,8 @@
   top: -10%;
   text-align: left;
   font-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #slava {
@@ -71,27 +74,22 @@
   margin-right: auto;
 
 }
-
 .quote a {
   font-size: 80%;
 }
-
 .ending {
   font-size: 70%;
   text-align: center;
 }
 .bottom {
-  position: absolute;
-  width: 100%;
+  width:100%;
+  position:fixed;
   left: 0;
-  bottom: 0;
-}
-
-#footerHere {
+  bottom: 1%;
   background-color: #5e5c63;
 }
-.footing {
+#footing {
   text-align: center;
   margin: 0px auto;
-
+  background-color: #5e5c63;
 }
