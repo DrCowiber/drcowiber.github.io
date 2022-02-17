@@ -14,26 +14,13 @@ window.addEventListener("load", function() {
       console.log("footer loaded");
 
 
-//anything below this doesnt work, will fix later
-      var offset = content.offset()
-      console.log("offset: " - offset);
-      footer.css("bottom", offset)
+/*    while(1>0){
+          var height = screen.height;
+          setTimeout(500);
 
 
-      var body = document.getElementById("pageContent");
 
-      var bht = body.height();
-      var wht = window.height();
-
-if (bht < wht) {
-    footer.css("position", "absolute");
-    footer.css("bottom", "10px");
-
-}
-
-      console.log("footer positioned");
-
-
+    }*/
 });
 
 //https://stackoverflow.com/questions/17395392/how-to-make-real-dynamic-footer
