@@ -1,6 +1,7 @@
 
 html, body {
     margin: 0;
+	height: auto;
 }
 
 .top {
@@ -88,7 +89,7 @@ html, body {
   width: 100%;
 }
 
-.frame {
+#frame {
     width: 100%;
 }
 .bottom {

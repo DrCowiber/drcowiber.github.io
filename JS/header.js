@@ -1,8 +1,15 @@
 
 window.addEventListener("load", function() {
 
+	
+	
+	
       var header = document.getElementById("headerHere");
 
+	
+
+	
+	
       header.innerHTML =
       '<div class="heading">'+
         '<img src="images/ukraine.png" alt="image is unable to load"/>'+

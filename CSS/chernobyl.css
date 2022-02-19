@@ -1,8 +1,27 @@
 #reactorInsert {
-  position: relative;
   image-rendering: pixelated;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0%;
+  text-align: center;
+}
+
+#pageContent h1 {
+	display: block;
+	text-align: center;
+	background-color: gray;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.center {
+	border: thick;
+  align-content: center;
+  display: block;
+  text-align: left;
+  font-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
