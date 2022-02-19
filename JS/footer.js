@@ -29,7 +29,8 @@ window.addEventListener("load", function() {
 		console.log("document height " + frame.style.height);
 	
 		let frameHeight = $('#wholePage').height();
-		console.log("content height " + (content.offsetHeight - 38));
+		let pageOffset = content.offsetHeight - 38;
+		console.log("content height " + pageOffset);
 	
 	
 		let bottomOffset = content.bottom - 38;
@@ -40,7 +41,7 @@ window.addEventListener("load", function() {
 	
 	
 		//choosing what to display based on difference of footer and window height
-		if(heightDifference != 0){
+		if([pageOffset] != 0){
 				footer.style.position = "absolute";
 				footer.style.bottom = "0";
 		} 
