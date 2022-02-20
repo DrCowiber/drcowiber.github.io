@@ -2,6 +2,7 @@
 window.addEventListener("load", function() {
 		const content = document.getElementById("pageContent");
 		const footer = document.getElementById("footerHere");
+		const footerDisplacer = document.getElementById("footerDisplacer");
 
 	
 				footer.innerHTML =
@@ -14,37 +15,17 @@ window.addEventListener("load", function() {
 			'</div>';
 			console.log("footer loaded");	
 
-				//document.getElementsByTagName('header')[0].appendChild(script);
+		//choosing what to display based on page height and window height
 	
-	
-		//getting heights of footer and window
-		
-		const frame = document.getElementById("wholePage");
-		const html = document.documentElement;
-		//console.log(document.scrollHeight);
-		//const height = frame.offsetHeight + html.offsetHeight;
-	
-		let docheight = html.scrollHeight;
-		console.log("window height " + window.innerHeight);
-		console.log("document height " + frame.style.height);
-	
-		let frameHeight = $('#wholePage').height();
-		let pageOffset = content.offsetHeight - 38;
-		console.log("content height " + pageOffset);
-	
-	
-		let bottomOffset = content.bottom
-		console.log("combined height " + bottomOffset);  
-
-		var docHeight = (frame !== undefined) ? frame : document.body.offsetHeight;
-		let heightDifference = window.innerHeight - html.clientHeight;
-		console.log("difference " + docHeight + " htmlClientHeight " + html.clientHeight);
-	
-	
-		//choosing what to display based on difference of footer and window height
-		if([pageOffset] != 0){
+	setInterval(function(){
+		if($("body").height() < $(window).height()){
 				footer.style.position = "absolute";
 				footer.style.bottom = "0";
-		} 
+		} else {
+				footer.style.position = "static";
+				footer.style.bottom = null;
+		}
+	}, 10);
+
 	
 });
