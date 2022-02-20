@@ -33,11 +33,12 @@ window.addEventListener("load", function() {
 		console.log("content height " + pageOffset);
 	
 	
-		let bottomOffset = content.bottom - 38;
+		let bottomOffset = content.bottom
 		console.log("combined height " + bottomOffset);  
-							  
+
+		var docHeight = (frame !== undefined) ? frame : document.body.offsetHeight;
 		let heightDifference = window.innerHeight - html.clientHeight;
-		console.log("difference " + heightDifference + " htmlClientHeight " + html.clientHeight);
+		console.log("difference " + docHeight + " htmlClientHeight " + html.clientHeight);
 	
 	
 		//choosing what to display based on difference of footer and window height
