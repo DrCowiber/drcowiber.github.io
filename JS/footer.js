@@ -27,5 +27,6 @@ window.addEventListener("load", function() {
 		}
 	}, 10);
 
+	// later I will attempt to find a way to account for padding from bottom most element to footer, although I am unsure if this will really be needed
 	
 });
