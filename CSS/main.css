@@ -74,6 +74,7 @@ html, body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
 }
 .quote a {
   font-size: 80%;
@@ -107,4 +108,8 @@ html, body {
   text-align: center;
   background-color: #5e5c63;
   width: 100%;
+}
+
+#footing blockquote {
+  margin-top: 0;
 }
