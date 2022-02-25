@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
     var button = document.getElementById("button");
     $(button).click(function () {
       animation.src = "images/chernobyl/exploding1.gif"
-      button.src = "images/chernobyl/button2.png";
+      button.src = "images/chernobyl/button2.gif";
       console.log(getRandomInt(10));
     });
 
