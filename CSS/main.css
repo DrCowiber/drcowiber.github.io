@@ -20,6 +20,7 @@ html, body {
 }
 
 .heading img {
+  image-rendering: pixelated;
   padding-top: 0.1%;
   border-radius: 5%;
 }
