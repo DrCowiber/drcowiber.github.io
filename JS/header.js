@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
 
       header.innerHTML =
       '<div class="heading">'+
-        '<img src="images/ukraine.png" alt="image is unable to load"/>'+
+        '<img src="images/ukraine.png" alt="image is unable to load" width="30%" height="auto"/>'+
         '<h1> Ukraine Hub </h1>'+
         '<div class="topnav">'+
           '<a id=class="active" href="https://drcowiber.github.io">Home</a>'+
