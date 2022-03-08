@@ -1,0 +1,13 @@
+#pageContent {
+  padding-top: 1%;
+}
+
+#crimeaQuestionarre {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    width: 30%;
+    font-size: 100%;
+    text-align: center;
+    border: solid;
+}
