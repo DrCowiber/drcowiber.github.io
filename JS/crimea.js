@@ -1,18 +1,34 @@
 window.addEventListener("load", function() {
-const questionarreContent - document.getElementById("crimeaQuestionarre");
-const quizStartButton = document.getElementById("quizStart");
-const quizNextButton = document.getElementById("quizNext");
+const questionarreContent = document.getElementById("crimeaQuestionarre");
+const quizButton = document.getElementById("quizButton");
 
-const questions ["What is the meaning of life?", "Where is ukraine located?"];
-const answers1 ["42", "to die"];
-const answers2 ["soviet russia", "eastern europe"];
 
-const answerInput[null];
-
-quizStartButton.onclick = function(){
-  console.log("YOUR MOM");
+answersObj = {
+  answers1: ["42", "to die"],
+  answers2: ["soviet russia", "eastern europe"]
 };
-quizNextButton.onclick = function(){
-  console.log("YOUR MOM");
+const questions = ["What is the meaning of life?", "Where is ukraine located?"];
+
+const answerInput = [null];
+
+let questionCount = 0;
+
+
+quizButton.onclick = function(){
+  crimeaQuestionarre.innerHTML =
+  "<h1>" + questions[questionCount] + "</h1>" +
+  "<form>" +
+  "<input type='radio' name='question1' value=" + answersObj['answers' + (questionCount + 1)][0] + ">" +
+  "<label for=" + answersObj['answers' + (questionCount + 1)][0] + ">" + answersObj['answers' + (questionCount + 1)][0] + "</label><br>" +
+
+  "<input type='radio' name='question1' value=" + answersObj['answers' + (questionCount + 1)][1] + ">" +
+  "<label for=" + answersObj['answers' + (questionCount + 1)][1] + ">" + answersObj['answers' + (questionCount + 1)][1] + "</label><br>" +
+  "</form>" +
+
+  "<button id='quizButton' onclick='function()'> Submit </button>";
+
+    const form = document.querySelector("form");
+    let formAnswer = new FormData(form);
 };
+
 });
