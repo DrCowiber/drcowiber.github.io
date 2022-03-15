@@ -9,26 +9,28 @@ answersObj = {
 };
 const questions = ["What is the meaning of life?", "Where is ukraine located?"];
 
-const answerInput = [null];
+let answerInput = [null];
 
 let questionCount = 0;
 
 
-quizButton.onclick = function(){
+quizButton.onclick = function click(){
   crimeaQuestionarre.innerHTML =
   "<h1>" + questions[questionCount] + "</h1>" +
   "<form>" +
-  "<input type='radio' name='question1' value=" + answersObj['answers' + (questionCount + 1)][0] + ">" +
-  "<label for=" + answersObj['answers' + (questionCount + 1)][0] + ">" + answersObj['answers' + (questionCount + 1)][0] + "</label><br>" +
+  "<input type='radio' name='question1' value='" + answersObj['answers' + (questionCount + 1)][0] + "'>" +
+  "<label for='" + answersObj['answers' + (questionCount + 1)][0] + "'>" + answersObj['answers' + (questionCount + 1)][0] + "</label><br>" +
 
-  "<input type='radio' name='question1' value=" + answersObj['answers' + (questionCount + 1)][1] + ">" +
-  "<label for=" + answersObj['answers' + (questionCount + 1)][1] + ">" + answersObj['answers' + (questionCount + 1)][1] + "</label><br>" +
-  "</form>" +
+  "<input type='radio' name='question1' value='" + answersObj['answers' + (questionCount + 1)][1] + "'>" +
+  "<label for='" + answersObj['answers' + (questionCount + 1)][1] + "'>" + answersObj['answers' + (questionCount + 1)][1] + "</label><br>" +
+  "<button id='quizButton' onclick='click()'> Submit </button>"
+  "</form>" ;
 
-  "<button id='quizButton' onclick='function()'> Submit </button>";
+    //const form = document.querySelector("form");
+    //let formAnswer = new FormData(form);
+    var output = document.getElementById("question1").value;
 
-    const form = document.querySelector("form");
-    let formAnswer = new FormData(form);
+    console.log(document.querySelector('input[name="rate"]:checked').value);
 };
 
 });
