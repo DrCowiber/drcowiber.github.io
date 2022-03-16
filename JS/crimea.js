@@ -13,24 +13,24 @@ let answerInput = [null];
 
 let questionCount = 0;
 
-
 quizButton.onclick = function click(){
   crimeaQuestionarre.innerHTML =
   "<h1>" + questions[questionCount] + "</h1>" +
   "<form>" +
-  "<input type='radio' name='question1' value='" + answersObj['answers' + (questionCount + 1)][0] + "'>" +
+  "<input type='radio' name='question1' id='q1' value='" + answersObj['answers' + (questionCount + 1)][0] + "'>" +
   "<label for='" + answersObj['answers' + (questionCount + 1)][0] + "'>" + answersObj['answers' + (questionCount + 1)][0] + "</label><br>" +
 
-  "<input type='radio' name='question1' value='" + answersObj['answers' + (questionCount + 1)][1] + "'>" +
+  "<input type='radio' name='question1' id='q2' value='" + answersObj['answers' + (questionCount + 1)][1] + "'>" +
   "<label for='" + answersObj['answers' + (questionCount + 1)][1] + "'>" + answersObj['answers' + (questionCount + 1)][1] + "</label><br>" +
-  "<button id='quizButton' onclick='click()'> Submit </button>"
+  "<button id='quizButton' onclick='click()'> Submit </button>" +
   "</form>" ;
+
 
     //const form = document.querySelector("form");
     //let formAnswer = new FormData(form);
-    var output = document.getElementById("question1").value;
-
-    console.log(document.querySelector('input[name="rate"]:checked').value);
+    //var output = document.getElementById("question1").value;
+    //console.log(output);
+    //console.log(document.querySelector('input[name="rate"]:checked').value);
 };
 
 });

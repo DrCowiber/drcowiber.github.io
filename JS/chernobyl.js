@@ -9,7 +9,7 @@ window.addEventListener("load", function() {
     var button = document.getElementById("button");
     $(button).click(function () {
   		if(animDone	== false){
-  		  animation.src = "images/chernobyl/exploding1.gif"
+  		  animation.src = "images/chernobyl/exploding1.gif";
   		}
   		button.src = "images/chernobyl/button2.gif";
   		animDone = true;
