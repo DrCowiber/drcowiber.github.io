@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
 const questionarreContent = document.getElementById("crimeaQuestionarre");
 const quizButton = document.getElementById("quizButton");
-
+const form = document.querySelector("form");
 
 answersObj = {
   answers1: ["42", "to die"],
@@ -22,15 +22,24 @@ quizButton.onclick = function click(){
 
   "<input type='radio' name='question1' id='q2' value='" + answersObj['answers' + (questionCount + 1)][1] + "'>" +
   "<label for='" + answersObj['answers' + (questionCount + 1)][1] + "'>" + answersObj['answers' + (questionCount + 1)][1] + "</label><br>" +
-  "<button id='quizButton' onclick='click()'> Submit </button>" +
+  "<button type='button' id='quizButton' onclick='click()'> Submit </button>" +
   "</form>" ;
 
 
-    //const form = document.querySelector("form");
-    //let formAnswer = new FormData(form);
-    //var output = document.getElementById("question1").value;
-    //console.log(output);
-    //console.log(document.querySelector('input[name="rate"]:checked').value);
+    //
+    //
+
 };
+
+setInterval(function(){
+  let formAnswer = new FormData(form);
+  let output = "";
+  for (const entry of formAnswers) {
+    output = output + entry[0] + "=" + entry[1] + "\r";
+  };
+  console.log(output);
+  console.log(document.querySelector('input[name="rate"]:checked').value);
+
+}, 1000);
 
 });
